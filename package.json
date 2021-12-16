@@ -8,12 +8,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "convict": "^6.2.1",
+    "date-fns": "^2.27.0",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "verror": "^1.10.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
     "eslint": "8.4.1",
-    "eslint-config-next": "12.0.7"
+    "eslint-config-next": "12.0.7",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.0.1",
+    "tailwindcss": "^3.0.6"
   }
 }
