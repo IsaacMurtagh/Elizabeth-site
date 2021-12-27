@@ -13,7 +13,7 @@ export default function Home({ posts }) {
         <div className="text-center">
           <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">From the blog</h2>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+           Hello, this is my blog here
           </p>
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
@@ -22,10 +22,9 @@ export default function Home({ posts }) {
               <div className="flex-shrink-0">
                 <div className='w-full h-48 object-cover relative'>
                   <Image
-                    src={post.coverImage.url}
+                    src={post.coverImage.path}
                     alt={post.coverImage.alternativeText}
                     layout="fill"
-                    className=""
                   />
                 </div>
                 {/* <img className="h-48 w-full object-cover" src={post.coverImage.url} alt={post.coverImage.alternativeText} /> */}
@@ -51,7 +50,7 @@ export default function Home({ posts }) {
                     <a href={post.author.href}>
                       <span className="sr-only">{post.author.name}</span>
                       <Image
-                        src={post.author.avatar.url}
+                        src={post.author.avatar.path}
                         alt={post.author.avatar.alternativeText}
                         height={48}
                         width={48}

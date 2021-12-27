@@ -1,5 +1,5 @@
 import removeNullish from './removeNullish';
-
+import config from '@config/index';
 export default class Image {
   constructor(props) {
     this.id = props.id,
@@ -28,9 +28,15 @@ export default class Image {
       updatedAt: attributes.createdAt,
     })
   }
+
+  get path() {
+    return `${config.get('strapi.baseUrl')}${this.url}`
+  }
+
   serialized() {
     return removeNullish({
       ...this,
+      path: this.path,
     })
   }
 }

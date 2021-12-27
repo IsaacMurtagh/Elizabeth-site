@@ -14,6 +14,25 @@ const config = convict({
       default: 'https://author.lilowriting.com',
       env: 'STRAPI_BASE_URL'
     },
+    domain: {
+      format: String,
+      default: 'author.lilowriting.com',
+      env: 'STRAPI_DOMAIN'
+    },
+  },
+  site: {
+    name: {
+      format: String,
+      default: 'Lilo Writing Blog',
+      env: 'BLOG_SITE_NAME'
+    }
+  },
+  marketing: {
+    name: {
+      format: String,
+      default: 'Lilo Writing Blog',
+      env: 'MARKETING_SITE_NAME'
+    }
   }
 });
 
