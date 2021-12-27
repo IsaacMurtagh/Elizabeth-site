@@ -1,4 +1,4 @@
-import { getAllPostSlugs, getPostBySlug } from '@/lib/posts';
+import { getAllPostSlugs, getPostBySlug } from '@lib/posts';
 
 export default function Post({ post }) {
   return (
