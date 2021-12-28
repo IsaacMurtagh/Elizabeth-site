@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import linkedIn from 'assets/linkedIn.svg';
+import variables from '@config/variables';
 
 const navigation = [
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/elizabeth-howe-38941321b/',
+    href: variables.linkedIn,
     icon: linkedIn,
   },
 ]
@@ -23,7 +24,7 @@ export default function footer() {
           ))}
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-base text-gray-400">&copy; {(new Date()).getFullYear()} LiloWriting.</p>
+          <p className="text-center text-base text-gray-400">&copy; {(new Date()).getFullYear()} {variables.legalName}.</p>
         </div>
       </div>
     </footer>

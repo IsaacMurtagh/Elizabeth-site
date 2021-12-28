@@ -5,10 +5,11 @@ import { getPostIdBySlug, savePostIds } from '@util/postCache';
 import DotMatrix from '@assets/dotMatrix.svg';
 import Author from '@components/author';
 import Date from '@components/date';
+import variables from '@config/variables';
 
 export default function Post({ post }) {
   return (
-    <>
+    <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -18,7 +19,7 @@ export default function Post({ post }) {
         {/* Open Graph */}
         {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
         <meta property="og:image" content={post.coverImage.url} key="ogimage" />
-        <meta property="og:site_name" content='LiloWriting' key="ogsitename" />
+        <meta property="og:site_name" content={variables.siteName} key="ogsitename" />
         <meta property="og:title" content={post.metaTitle} key="ogtitle" />
         <meta property="og:description" content={post.metaDescription} key="ogdesc" />
       </Head>
@@ -59,7 +60,7 @@ export default function Post({ post }) {
           />
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
