@@ -19,6 +19,11 @@ const config = convict({
       default: 'author.lilowriting.com',
       env: 'STRAPI_DOMAIN'
     },
+    imageDomain: {
+      format: String,
+      default: 'lilowriting-strapi-assets.s3.ap-southeast-2.amazonaws.com',
+      env: 'STRAPI_IMAGE_DOMAIN'
+    },
   },
   site: {
     name: {

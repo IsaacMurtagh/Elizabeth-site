@@ -9,6 +9,7 @@ export default class Author {
     this.createdAt = props.createdAt;
     this.updatedAt = props.updatedAt;
     this.avatar = props.avatar;
+    this.linkedIn = props.linkedIn;
   }
 
   static fromApiResponse(res) {
@@ -19,6 +20,7 @@ export default class Author {
       email: attributes.email,
       createdAt: attributes.createdAt,
       updatedAt: attributes.updatedAt,
+      linkedIn: attributes.linkedIn,
       avatar: attributes.avatar && Image.fromApiResponse(attributes.avatar),
     });
   }

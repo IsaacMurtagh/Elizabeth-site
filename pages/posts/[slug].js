@@ -17,7 +17,7 @@ export default function Post({ post }) {
 
         {/* Open Graph */}
         {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
-        <meta property="og:image" content={post.coverImage.path} key="ogimage" />
+        <meta property="og:image" content={post.coverImage.url} key="ogimage" />
         <meta property="og:site_name" content='LiloWriting' key="ogsitename" />
         <meta property="og:title" content={post.metaTitle} key="ogtitle" />
         <meta property="og:description" content={post.metaDescription} key="ogdesc" />
@@ -25,16 +25,16 @@ export default function Post({ post }) {
       <section className="relative py-8 md:py-16 bg-white overflow-hidden">
         <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
           <div className="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
-            <DotMatrix className="absolute top-12 left-full transform translate-x-32"/>
-            <DotMatrix className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"/>
-            <DotMatrix className="absolute bottom-12 left-full transform translate-x-32"/>
+            <DotMatrix className="absolute top-12 left-full transform translate-x-32 text-gray-300"/>
+            <DotMatrix className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32 text-gray-300"/>
+            <DotMatrix className="absolute bottom-12 left-full transform translate-x-32 text-gray-300"/>
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto space-y-8">
             <div className='w-full aspect-[4/3] relative'>
               <Image
-                src={post.coverImage.path}
+                src={post.coverImage.url}
                 alt={post.coverImage.alternativeText}
                 layout="fill"
                 className='object-cover'

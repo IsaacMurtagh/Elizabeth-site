@@ -29,14 +29,9 @@ export default class Image {
     })
   }
 
-  get path() {
-    return `${config.get('strapi.baseUrl')}${this.url}`
-  }
-
   serialized() {
     return removeNullish({
       ...this,
-      path: this.path,
     })
   }
 }

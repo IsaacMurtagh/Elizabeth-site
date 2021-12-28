@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: [
       config.get('strapi.domain'),
+      config.get('strapi.imageDomain'),
     ]
   },
 }

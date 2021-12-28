@@ -22,12 +22,11 @@ export default function Home({ posts }) {
               <div className="flex-shrink-0">
                 <div className='w-full h-48 object-cover relative'>
                   <Image
-                    src={post.coverImage.path}
+                    src={post.coverImage.url}
                     alt={post.coverImage.alternativeText}
                     layout="fill"
                   />
                 </div>
-                {/* <img className="h-48 w-full object-cover" src={post.coverImage.url} alt={post.coverImage.alternativeText} /> */}
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
@@ -50,7 +49,7 @@ export default function Home({ posts }) {
                     <a href={post.author.href}>
                       <span className="sr-only">{post.author.name}</span>
                       <Image
-                        src={post.author.avatar.path}
+                        src={post.author.avatar.url}
                         alt={post.author.avatar.alternativeText}
                         height={48}
                         width={48}
