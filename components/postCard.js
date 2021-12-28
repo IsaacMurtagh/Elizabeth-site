@@ -10,11 +10,11 @@ export default function postCard({ post, className, long }) {
       <Link href={post.url} cl>
         <a className={cn({
           'card-interactive flex-1': true,
-          'md:flex': long
+          'lg:flex': long
         })}>
           <div className={cn({
             'w-full aspect-video relative': true,
-            'md:w-2/3': long,
+            'lg:w-2/3': long,
           })}>
             <Image
               src={post.coverImage.url}

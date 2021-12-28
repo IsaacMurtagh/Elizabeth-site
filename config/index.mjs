@@ -1,6 +1,5 @@
 import convict from 'convict';
 
-// Define a schema
 const config = convict({
   env: {
     doc: 'The application environment.',
@@ -35,7 +34,7 @@ const config = convict({
   marketing: {
     name: {
       format: String,
-      default: 'Lilo Writing Blog',
+      default: 'Lilo Writing',
       env: 'MARKETING_SITE_NAME'
     }
   }
