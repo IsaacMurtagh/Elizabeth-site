@@ -17,7 +17,7 @@ export default function author({ author }) {
         </div>
         <div className="text-xs font-medium text-slate-500">
           <div className="italic">Written by</div>
-          <div>{ author.name }</div>
+          <div className="link-text">{ author.name }</div>
         </div>
       </a>
     </Link>

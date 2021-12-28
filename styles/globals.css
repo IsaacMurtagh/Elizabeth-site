@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply flex flex-col rounded-lg shadow-lg overflow-hidden bg-white;
+  }
+
+  .card-cover-image {
+    @apply w-full aspect-video relative;
+  }
+
+  .card-interactive:hover .card-cover-image {
+    @apply scale-105;
+  }
+
+  .card-interactive .card-cover-image {
+    @apply transition ease-in-out duration-300;
+  }
+
+  a:hover .link-text {
+    @apply text-blue-600;
+  }
+}
