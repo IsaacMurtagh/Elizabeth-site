@@ -3,13 +3,12 @@ import Link from "next/link";
 
 export default function author({ author }) {
   return (
-    // TODO: Replace with social link
-    <Link href='/'>
+    <Link href={author.linkedIn}>
       <a className="flex space-x-4 items-center cursor-pointer">
         <div className="flex-shrink-0 flex">
           <span className="sr-only">{author.name}</span>
           <Image
-            src={author.avatar.path}
+            src={author.avatar.url}
             alt={author.avatar.alternativeText}
             height={48}
             width={48}
