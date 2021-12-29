@@ -1,4 +1,4 @@
-import removeNullish from './removeNullish';
+import removeNullish from '@util/removeNullish';
 import config from '@config/index';
 export default class Image {
   constructor(props) {
