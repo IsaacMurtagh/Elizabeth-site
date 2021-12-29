@@ -9,7 +9,7 @@ import variables from '@config/variables';
 
 export default function Post({ post }) {
   return (
-    <div>
+    <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -17,7 +17,7 @@ export default function Post({ post }) {
         <meta name="description" content={post.metaDescription} key="description" />
 
         {/* Open Graph */}
-        {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
+        <meta property="og:url" content={variables.blogSiteBaseUrl} key="ogurl" />
         <meta property="og:image" content={post.coverImage.url} key="ogimage" />
         <meta property="og:site_name" content={variables.siteName} key="ogsitename" />
         <meta property="og:title" content={post.metaTitle} key="ogtitle" />
@@ -60,7 +60,7 @@ export default function Post({ post }) {
           />
         </div>
       </section>
-    </div>
+    </>
   )
 }
 

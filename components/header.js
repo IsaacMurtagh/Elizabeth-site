@@ -8,8 +8,8 @@ import {
   MenuIcon,
   DocumentTextIcon,
   IdentificationIcon,
-  ColorSwatchIcon,
   XIcon,
+  // ColorSwatchIcon,
 } from '@heroicons/react/outline'
 
 const siteName = variables.siteName;
@@ -19,11 +19,11 @@ const navigation = [
     href: '/',
     icon: DocumentTextIcon,
   },
-  { 
-    name: 'Categories',
-    href: '/',
-    icon: ColorSwatchIcon,
-  },
+  // { 
+  //   name: 'Categories',
+  //   href: '/categories',
+  //   icon: ColorSwatchIcon,
+  // },
   { 
     name: 'About Me',
     href: `${variables.marketingSiteBaseUrl}/about-me`,
@@ -119,16 +119,14 @@ export default function header() {
                 <div className="mt-6">
                   <nav className="grid gap-6">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
-                      >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
-                          <item.icon className="h-6 w-6" aria-hidden="true" />
-                        </div>
-                        <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
-                      </a>
+                      <Link href={item.href} key={item.name}>
+                        <a className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50" >
+                          <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+                            <item.icon className="h-6 w-6" aria-hidden="true" />
+                          </div>
+                          <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
+                        </a>
+                      </Link>
                     ))}
                   </nav>
                 </div>
