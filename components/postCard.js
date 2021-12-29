@@ -25,7 +25,7 @@ export default function postCard({ post, className, long }) {
           </div>
           <div className='p-4 space-y-3'>
             <p className="text-xl font-semibold text-gray-900">{post.title}</p>
-            <p className="text-base text-gray-500">{post.description}</p>
+            <p className="text-base text-gray-500">{post.excerpt}</p>
           </div>
         </a>
       </Link>

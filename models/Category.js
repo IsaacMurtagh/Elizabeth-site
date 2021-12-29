@@ -1,4 +1,4 @@
-import removeNullish from './removeNullish';
+import removeNullish from '@util/removeNullish';
 
 export default class Category {
   constructor(props) {

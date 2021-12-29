@@ -3,7 +3,8 @@ import html from 'remark-html'
 import Image from './Image';
 import Category from './Category';
 import Author from './Author';
-import removeNullish from './removeNullish';
+import removeNullish from '@util/removeNullish';
+import stripHtml from '@util/stripHtml';
 export default class Post {
   constructor(props) {
     this.id = props.id;
@@ -45,6 +46,15 @@ export default class Post {
     return `/posts/${this.slug}`
   }
 
+  get excerpt() {
+    const maxLength = 240;
+    const plainContent = stripHtml(this.content);
+    if (plainContent.length < maxLength) {
+      return plainContent;
+    }
+    return `${plainContent.slice(0, maxLength)} ...`
+  }
+
   serialized() {
     return removeNullish({ 
       ...this,
@@ -52,6 +62,7 @@ export default class Post {
       category: this.category?.serialized(),
       author: this.author?.serialized(),
       url: this.url,
+      excerpt: this.excerpt,
     });
   }
 }

@@ -1,4 +1,4 @@
-import removeNullish from './removeNullish';
+import removeNullish from '@util/removeNullish';
 import Image from './Image';
 
 export default class Author {
