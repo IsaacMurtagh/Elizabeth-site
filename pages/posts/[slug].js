@@ -49,9 +49,12 @@ export default function Post({ post }) {
                 {post.title}
               </span>
             </h1>
-            <div className='flex justify-between items-center border px-4 py-2 rounded-xl'>
+            <div className='flex justify-between items-center border px-4 py-2 rounded-xl text-sm font-medium text-slate-500'>
               <Author author={post.author}/>
-              <Date className='text-sm font-medium text-slate-500' dateString={post.publishedAt}/>
+              <div>
+                <div>{post.readTimeMinutes} mins — 📖</div>
+                <Date className=""dateString={post.publishedAt}/>
+              </div>
             </div>
           </div>
           <div

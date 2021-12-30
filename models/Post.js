@@ -5,6 +5,7 @@ import Category from './Category';
 import Author from './Author';
 import removeNullish from '@util/removeNullish';
 import stripHtml from '@util/stripHtml';
+import readTimeInMinutes from '@util/readTimeInMinutes';
 export default class Post {
   constructor(props) {
     this.id = props.id;
@@ -52,7 +53,12 @@ export default class Post {
     if (plainContent.length < maxLength) {
       return plainContent;
     }
-    return `${plainContent.slice(0, maxLength)} ...`
+    return `${plainContent.slice(0, maxLength).trim()}...`
+  }
+
+  get readTimeMinutes() {
+    const plainContent = stripHtml(this.content);
+    return readTimeInMinutes(plainContent);
   }
 
   serialized() {
@@ -63,6 +69,7 @@ export default class Post {
       author: this.author?.serialized(),
       url: this.url,
       excerpt: this.excerpt,
+      readTimeMinutes: this.readTimeMinutes,
     });
   }
 }

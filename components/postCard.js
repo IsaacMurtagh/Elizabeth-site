@@ -29,9 +29,12 @@ export default function postCard({ post, className, long }) {
           </div>
         </a>
       </Link>
-      <div className='flex justify-between items-center p-4 bg-stone-100'>
+      <div className='flex justify-between items-center p-4 bg-stone-100 text-xs sm:text-sm font-medium text-slate-500'>
         <Author author={post.author}/>
-        <Date className='text-sm font-medium text-slate-500' dateString={post.publishedAt}/>
+        <div>
+          <div>{post.readTimeMinutes} mins — 📖</div>
+          <Date dateString={post.publishedAt}/>
+        </div>
       </div>
     </div>
   )
