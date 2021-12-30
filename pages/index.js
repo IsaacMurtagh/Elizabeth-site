@@ -34,7 +34,7 @@ export default function Home({ posts }) {
               key={featuredPost.id}
               post={featuredPost}
               className='lg:col-span-2'
-              long={true}
+              long
             />
             {regularPosts.map((post) => (
               <PostCard key={post.id} post={post} />
