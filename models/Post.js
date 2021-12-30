@@ -40,7 +40,13 @@ export default class Post {
       createdAt: attributes.createdAt,
       updatedAt: attributes.updatedAt,
       publishedAt: attributes.publishedAt,
-  });
+    });
+  }
+  
+  static async fromPreviewApiResponse(res) {
+    const post = await Post.fromApiResponse(res);
+    post.publishedAt = post.publishedAt || post.updatedAt;
+    return post;
   }
 
   get url() {

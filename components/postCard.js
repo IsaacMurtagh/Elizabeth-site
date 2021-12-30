@@ -12,10 +12,7 @@ export default function postCard({ post, className, long }) {
           'card-interactive flex-1': true,
           'lg:flex': long
         })}>
-          <div className={cn({
-            'w-full aspect-video relative': true,
-            'lg:w-2/3': long,
-          })}>
+          <div className='w-full aspect-video relative'>
             <Image
               src={post.coverImage.url}
               alt={post.coverImage.alternativeText}
@@ -23,7 +20,10 @@ export default function postCard({ post, className, long }) {
               className='object-cover card-cover-image'
             />
           </div>
-          <div className='p-4 space-y-3'>
+          <div className={cn({
+            'p-4 space-y-3': true,
+            'lg:w-1/3': long,
+          })}>
             <p className="text-xl font-semibold text-gray-900">{post.title}</p>
             <p className="text-base text-gray-500">{post.excerpt}</p>
           </div>
