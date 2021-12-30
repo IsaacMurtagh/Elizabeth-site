@@ -1,2 +1,10 @@
+# *
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /preview
+
+# Host
+Host: https://blog.lilowriting.com
+
+# Sitemaps
+Sitemap: https://blog.lilowriting.com/sitemap.xml

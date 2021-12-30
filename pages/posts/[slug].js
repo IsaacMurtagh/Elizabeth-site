@@ -17,7 +17,7 @@ export default function Post({ post }) {
         <meta name="description" content={post.metaDescription} key="description" />
 
         {/* Open Graph */}
-        <meta property="og:url" content={variables.blogSiteBaseUrl} key="ogurl" />
+        <meta property="og:url" content={variables.siteBaseUrl} key="ogurl" />
         <meta property="og:image" content={post.coverImage.url} key="ogimage" />
         <meta property="og:site_name" content={variables.siteName} key="ogsitename" />
         <meta property="og:title" content={post.metaTitle} key="ogtitle" />
@@ -42,7 +42,7 @@ export default function Post({ post }) {
               />
             </div>
             <h1>
-              <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+              <span className="block text-base text-center text-rose-500 font-semibold tracking-wide uppercase">
                 {post.category.name}
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -58,7 +58,7 @@ export default function Post({ post }) {
             </div>
           </div>
           <div
-            className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto"
+            className="mt-6 prose prose-rose prose-lg text-gray-500 mx-auto"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </div>

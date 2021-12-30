@@ -20,6 +20,10 @@
   }
 
   a:hover .link-text {
-    @apply text-blue-600;
+    @apply text-rose-500;
+  }
+
+  a:focus {
+    @apply outline-rose-500;
   }
 }
