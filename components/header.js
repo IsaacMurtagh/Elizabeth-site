@@ -25,12 +25,12 @@ const navigation = [
   //   icon: ColorSwatchIcon,
   // },
   { 
-    name: 'About Me',
+    name: 'About me',
     href: `${variables.marketingSiteBaseUrl}/about-me`,
     icon: IdentificationIcon,
   },
   {
-    name: 'Hire my Services',
+    name: 'My services',
     href: `${variables.marketingSiteBaseUrl}/services`,
     icon: CashIcon,
   },
