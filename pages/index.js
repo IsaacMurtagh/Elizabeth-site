@@ -15,7 +15,7 @@ export default function Home({ posts }) {
         <meta name="description" content={variables.description} key="description" />
 
         {/* Open Graph */}
-        <meta property="og:url" content={variables.blogSiteBaseUrl} key="ogurl" />
+        <meta property="og:url" content={variables.siteBaseUrl} key="ogurl" />
         <meta property="og:image" content='/public/logo.png' key="ogimage" />
         <meta property="og:site_name" content={variables.siteName} key="ogsitename" />
         <meta property="og:title" content={variables.siteName} key="ogtitle" />
@@ -30,12 +30,12 @@ export default function Home({ posts }) {
             Catch up with my latest articles...
           </h2>
           <div className="mt-12 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none">
-            <PostCard
+            {featuredPost && <PostCard
               key={featuredPost.id}
               post={featuredPost}
               className='lg:col-span-2'
               long
-            />
+            />}
             {regularPosts.map((post) => (
               <PostCard key={post.id} post={post} />
             ))}
