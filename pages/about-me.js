@@ -13,7 +13,7 @@ const aboutMeParagraphs = [
 
 const aboutMeLinks = [
   {
-    name: 'linkedIn',
+    name: 'LinkedIn',
     href: variables.linkedIn,
   },
   {
@@ -30,7 +30,7 @@ export default function aboutMe() {
   return (
     <PageShellBasic>
       <Head>
-        <meta name="description" content="My name's Elizabeth Howe, I am a medical writer located in New Zealand - get in touch about my writing services." key="description" />
+        <meta name="description" content="My name's Elizabeth Howe, I am a medical writer located in New Zealand — get in touch about my writing services." key="description" />
       </Head>
       <Headline
         title="About me"
@@ -54,7 +54,7 @@ export default function aboutMe() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div>å
           <div className="relative max-w-lg aspect-square mx-auto flex flex-1 shadow-lg">
             <Image
               priority

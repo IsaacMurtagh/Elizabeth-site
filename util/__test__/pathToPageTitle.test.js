@@ -3,7 +3,7 @@ import pathToPageTitle from '../pathToPageTitle';
 describe('pathToPageTitle', () => {
   it('is the home path', () => {
     const path = '/';
-    const expected = 'Isaac Murtagh — Web Dev';
+    const expected = 'Isaac Murtagh — Medical Writing';
     expect(pathToPageTitle({ path, siteName: 'Isaac Murtagh'})).toEqual(expected);
   });
 

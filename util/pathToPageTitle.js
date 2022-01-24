@@ -10,7 +10,7 @@ function kebabToCapitalize(s) {
 export default function pathToPageTitle({ path, siteName }) {
   const kebabCase = path.split('/').slice(-1)[0];
   if (!kebabCase) {
-    return `${siteName} — Web Dev`;
+    return `${siteName} — Medical Writing`;
   }
   return `${siteName} — ${kebabToCapitalize(kebabCase)}`;
 }
