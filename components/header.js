@@ -9,29 +9,23 @@ import {
   DocumentTextIcon,
   IdentificationIcon,
   XIcon,
-  // ColorSwatchIcon,
 } from '@heroicons/react/outline'
 
 const siteName = variables.siteName;
 const navigation = [
   { 
-    name: 'Posts',
-    href: '/',
+    name: 'Blog',
+    href: '/blog',
     icon: DocumentTextIcon,
   },
-  // { 
-  //   name: 'Categories',
-  //   href: '/categories',
-  //   icon: ColorSwatchIcon,
-  // },
   { 
     name: 'About me',
-    href: `${variables.marketingSiteBaseUrl}/about-me`,
+    href: '/about-me',
     icon: IdentificationIcon,
   },
   {
-    name: 'My services',
-    href: `${variables.marketingSiteBaseUrl}/services`,
+    name: 'Examples',
+    href: '/examples',
     icon: CashIcon,
   },
 ]
@@ -119,14 +113,16 @@ export default function header() {
                 <div className="mt-6">
                   <nav className="grid gap-6">
                     {navigation.map((item) => (
-                      <Link href={item.href} key={item.name}>
-                        <a className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50" >
-                          <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-rose-400 text-white">
-                            <item.icon className="h-6 w-6" aria-hidden="true" />
-                          </div>
-                          <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
-                        </a>
-                      </Link>
+                      <Popover.Button key={item.name}>
+                        <Link href={item.href}>
+                          <a className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50" >
+                            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-rose-400 text-white">
+                              <item.icon className="h-6 w-6" aria-hidden="true" />
+                            </div>
+                            <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
+                          </a>
+                        </Link>
+                      </Popover.Button>
                     ))}
                   </nav>
                 </div>
@@ -134,11 +130,13 @@ export default function header() {
               <div className="py-6 px-5">
                 <div className="grid grid-cols-2 gap-4">
                   {resources.map((item) => (
-                    <Link href={item.href} key={item.name}>
-                      <a className="text-base font-medium text-gray-900" >
-                        <span className='link-text'>{item.name}</span>
-                      </a>
-                    </Link>
+                    <Popover.Button key={item.name}>
+                      <Link href={item.href} key={item.name}>
+                        <a className="text-base font-medium text-gray-900" >
+                          <span className='link-text'>{item.name}</span>
+                        </a>
+                      </Link>
+                    </Popover.Button>
                   ))}
                 </div>
               </div>

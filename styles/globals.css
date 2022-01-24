@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .btn-primary {
+    @apply text-white uppercase text-lg bg-rose-400 px-4 py-3 border border-rose-400 border-2 rounded active:bg-rose-500 active:border-rose-500 transition transition-shadow ease-in hover:shadow-md focus:outline-rose-500;
+  }
+  
   .card {
     @apply flex flex-col rounded-lg shadow-lg overflow-hidden bg-white;
   }

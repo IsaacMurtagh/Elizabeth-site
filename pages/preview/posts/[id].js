@@ -1,4 +1,4 @@
-import Post from "@pages/posts/[slug]";
+import Post from "@pages/blog/[slug]";
 import Error from 'next/error'
 import { getPreviewPostsById } from '@lib/posts';
 import VError from "verror";
