@@ -54,11 +54,11 @@ export default function aboutMe() {
                 </li>
               ))}
             </ul>
-          </div>å
+          </div>
           <div className="relative max-w-lg aspect-square mx-auto flex flex-1 shadow-lg">
             <Image
               priority
-              src="/Elizabeth-Howe.png"
+              src="/elizabeth_howe.png"
               alt="Elizabeth Howe"
               layout="fill"
               className="object-cover rounded-md"
