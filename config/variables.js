@@ -1,5 +1,5 @@
 const variables = {
-  siteName: 'LiloWriting - Blog',
+  siteName: 'LiloWriting',
   legalName: 'LiloWriting',
   linkedIn: 'https://www.linkedin.com/in/elizabeth-howe-38941321b/',
   contactEmail: 'mailto:contact@lilowriting.com',

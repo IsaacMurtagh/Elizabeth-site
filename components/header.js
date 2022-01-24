@@ -15,23 +15,18 @@ import {
 const siteName = variables.siteName;
 const navigation = [
   { 
-    name: 'Posts',
-    href: '/',
+    name: 'Blog',
+    href: '/blog',
     icon: DocumentTextIcon,
   },
-  // { 
-  //   name: 'Categories',
-  //   href: '/categories',
-  //   icon: ColorSwatchIcon,
-  // },
   { 
     name: 'About me',
-    href: `${variables.marketingSiteBaseUrl}/about-me`,
+    href: '/about-me',
     icon: IdentificationIcon,
   },
   {
-    name: 'My services',
-    href: `${variables.marketingSiteBaseUrl}/services`,
+    name: 'Examples',
+    href: '/examples',
     icon: CashIcon,
   },
 ]
