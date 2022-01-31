@@ -27,6 +27,11 @@ export default function footer() {
           <p className="text-center text-base text-gray-400">&copy; {(new Date()).getFullYear()} {variables.legalName}.</p>
         </div>
       </div>
+      <div className='flex justify-center text-center text-sm text-gray-600'>
+        <Link href='https://isaacmurtagh.com'>
+          <a><span className="link-text">Product of Isaac Murtagh — Web Dev</span></a>
+        </Link>
+      </div>
     </footer>
   )
 }
