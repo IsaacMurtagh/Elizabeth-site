@@ -17,9 +17,9 @@ export default function aboutMe() {
           layout="fill"
         />
         <div className="absolute inset-0 flex justify-center items-center flex-col">
-          <div className="text-center mb-20 text-rose-600 font-bold text-4xl md:text-6xl">
+          <h1 className="text-center mb-20 text-rose-600 font-bold text-4xl md:text-6xl">
             LiloWriting — Medical & Science Writing
-          </div>
+          </h1>
           <Link href={variables.contactEmail}>
             <a className="btn-primary">
               Contact Me
