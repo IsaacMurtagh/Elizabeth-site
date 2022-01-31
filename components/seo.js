@@ -8,6 +8,7 @@ export default function seo({ path }) {
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
+      <meta httpEquiv='content-language' content='en-gb'/>
       <title>{title}</title>
 
       {/* Open Graph */}
