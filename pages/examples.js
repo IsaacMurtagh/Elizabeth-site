@@ -16,18 +16,14 @@ const sections = [
         name: 'What You Need to Know About Acne',
         href: 'https://healthmatch.io/acne',
         type: paid,
-        note: 'Article on acne. Commissioned by the website HealthMatch.',
-      }
-    ]
-  },
-  {
-    name: 'Scientific Research Article',
-    examples: [
+        note: 'Commissioned by the website HealthMatch.',
+      },
       {
-        name: '[Drug] Treatment Of Patients With Chronic Insomnia Characterised By Nocturnal Awakenings: Results from the double-blind treatment period',
-        href: '[Drug]_Treatment_Of_Patients_With_Chronic_Insomnia_Characterised_By_Nocturnal_Awakenings__Results_from_the_double-blind_treatment_period.pdf',
-        type: educational,
-      }
+        name: 'Driving Anxiety: Overview, Causes, And How To Get Over It',
+        href: 'https://healthmatch.io/anxiety/how-to-get-over-driving-anxiety',
+        type: paid,
+        note: 'Commissioned by the website HealthMatch.',
+      },
     ]
   },
   {
