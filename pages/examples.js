@@ -5,27 +5,9 @@ import Head from "next/head";
 import Headline from "@components/headline";
 import Link from "next/link";
 
-const paid = '💲';
 const educational = '📚';
 
 const sections = [
-  {
-    name: 'Health Communications',
-    examples: [
-      {
-        name: 'What You Need to Know About Acne',
-        href: 'https://healthmatch.io/acne',
-        type: paid,
-        note: 'Commissioned by the website HealthMatch.',
-      },
-      {
-        name: 'Driving Anxiety: Overview, Causes, And How To Get Over It',
-        href: 'https://healthmatch.io/anxiety/how-to-get-over-driving-anxiety',
-        type: paid,
-        note: 'Commissioned by the website HealthMatch.',
-      },
-    ]
-  },
   {
     name: 'Continuing Medical Education',
     examples: [
@@ -47,7 +29,7 @@ export default function about() {
       </Head>
       <Headline
         title="Examples"
-        subtitle="Check out some of the writing I've done"
+        subtitle="For more examples of my work, please email me at <a href='mailto:elizabeth@lilowriting.com'>elizabeth@lilowriting.com</a>"
       />
       <table className="w-full table-fixed text-left">
         <thead className="text-gray-800 font-medium text-lg">
