@@ -29,7 +29,7 @@ export default function about() {
       </Head>
       <Headline
         title="Examples"
-        subtitle="For more examples of my work, please email me at <a href='mailto:elizabeth@lilowriting.com'>elizabeth@lilowriting.com</a>"
+        subtitle="For more examples of my work, please email me at <a href='mailto:elizabeth.ruby.howe@gmail.com'>elizabeth.ruby.howe@gmail.com</a>"
       />
       <table className="w-full table-fixed text-left">
         <thead className="text-gray-800 font-medium text-lg">

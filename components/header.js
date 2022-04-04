@@ -14,11 +14,6 @@ import {
 const siteName = variables.siteName;
 const navigation = [
   { 
-    name: 'Blog',
-    href: '/blog',
-    icon: DocumentTextIcon,
-  },
-  { 
     name: 'About me',
     href: '/about-me',
     icon: IdentificationIcon,
