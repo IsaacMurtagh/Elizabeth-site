@@ -21,8 +21,8 @@ const aboutMeLinks = [
     href: 'elizabeth-howe-cv.pdf',
   },
   {
-    name: 'elizabeth@lilowriting.com',
-    href: 'mailto:elizabeth@lilowriting.com',
+    name: 'elizabeth.ruby.howe@gmail.com',
+    href: 'mailto:elizabeth.ruby.howe@gmail.com',
   },
 ]
 
