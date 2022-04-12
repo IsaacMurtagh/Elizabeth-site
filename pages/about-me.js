@@ -7,7 +7,7 @@ import variables from "@config/variables";
 
 const aboutMeParagraphs = [
   'I am a science and medical writer based in the beautiful Wellington, New Zealand. I studied towards a Bachelor of Science in Biochemistry from the University of Canterbury before transferring in my final year to the Victoria University of Wellington to graduate with a Bachelor of Biomedical Science, majoring in Molecular Pathology.',
-  'I write about biology, biochemistry, general medicine, health, pharmaceuticals, science policy and mental health. My passion lies in the general medicine and mental health sectors.',
+  'I write about biology, biochemistry, general medicine, health, pharmaceuticals, science policy and mental health. My passion lies in the general medicine and mental health sectors. I am experienced in creating health and science-related content for the general public as well as writing for journal publication.',
   'When I’m not working you can find me gardening, reading, at the gym or behind a sewing machine.',
 ]
 

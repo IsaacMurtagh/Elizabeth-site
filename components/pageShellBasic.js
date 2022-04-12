@@ -5,8 +5,7 @@ export default function pageShellBasic({ children, plain, className }) {
       { !plain && (
         <>
           <DotMatrix className="hidden md:block absolute top-16 right-24 text-gray-100"/>
-          <DotMatrix className="hidden md:block absolute bottom-1/3 left-24 text-gray-100"/>
-          <DotMatrix className="hidden md:block absolute bottom-16 right-24 text-gray-100"/>
+          <DotMatrix className="hidden md:block absolute bottom-1/4 left-24 text-gray-100"/>
         </>
       )}
       <div className={`relative max-w-7xl mx-auto ${className}`.trim()}>

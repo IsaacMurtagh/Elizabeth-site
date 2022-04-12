@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://lilowriting.com',
+  siteUrl: 'https://www.elizabeth-howe.com',
   generateRobotsTxt: true,
   exclude: ['/preview'],
   robotsTxtOptions: {
