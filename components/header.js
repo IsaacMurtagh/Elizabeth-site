@@ -6,7 +6,6 @@ import { Popover, Transition } from '@headlessui/react'
 import {
   CashIcon,
   MenuIcon,
-  DocumentTextIcon,
   IdentificationIcon,
   XIcon,
 } from '@heroicons/react/outline'
@@ -37,7 +36,7 @@ const resources = [
 
 export default function header() {
   return (
-    <header className='h-24'>
+    <header className='h-24 md:h-32'>
       <Popover className='fixed w-full z-10 bg-white/80 border-b shadow-sm'>
         <nav className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-label='Top'>
           <div className='w-full py-6 items-center border-b border-slate-100 lg:border-none'>
@@ -45,7 +44,7 @@ export default function header() {
               <Link href={'/'}>
                 <a>
                   <span className='sr-only'>{ siteName }</span>
-                  <div className='w-12 h-12 relative'>
+                  <div className='w-12 md:w-20 h-12 md:h-20 relative'>
                     <Image
                       src='/logo.png'
                       alt={siteName}

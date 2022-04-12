@@ -1,10 +1,10 @@
 const variables = {
-  siteName: 'LiloWriting',
-  legalName: 'LiloWriting',
+  siteName: 'Elizabeth Howe Medical Writer',
+  legalName: 'Elizabeth Howe',
   linkedIn: 'https://www.linkedin.com/in/elizabeth-howe-38941321b/',
   contactEmail: 'mailto:elizabeth.ruby.howe@gmail.com',
-  marketingSiteBaseUrl: 'https://lilowriting.com',
-  siteBaseUrl: 'https://lilowriting.com',
-  siteDescription: 'Stay up to date with Medical Writing news, where I write about all things Science and Medicine.',
+  marketingSiteBaseUrl: 'https://www.elizabeth-howe.com',
+  siteBaseUrl: 'https://www.elizabeth-howe.com',
+  siteDescription: 'Freelance Medical Writer, Elizabeth Howe',
 };
 export default variables;
