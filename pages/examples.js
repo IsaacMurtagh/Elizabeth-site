@@ -16,8 +16,13 @@ const sections = [
         date: '2021-11-01T12:00:00.000Z',
         note: 'This article was written as a practice CME piece.'
       },
+    ]
+  },
+  {
+    name: 'Research Reports and Manuscripts',
+    examples: [
       {
-        name: 'Research reports and manuscripts',
+        name: 'Knock-out of SUC2 Gene in Saccharomyces Cerevisiae',
         href: 'resources/Knock-out_of_SUC2_Gene_in_Saccharomyces_Cerevisiae.pdf',
         date: '2021-11-01T12:00:00.000Z',
         note: 'This research report was written in my final year of university based on results obtained by my laboratory group.'
