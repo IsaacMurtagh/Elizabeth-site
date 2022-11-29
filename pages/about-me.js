@@ -6,9 +6,9 @@ import Link from "next/link";
 import variables from "@config/variables";
 
 const aboutMeParagraphs = [
-  'I am a science and medical writer based in the beautiful Wellington, New Zealand. I studied towards a Bachelor of Science in Biochemistry from the University of Canterbury before transferring in my final year to the Victoria University of Wellington to graduate with a Bachelor of Biomedical Science, majoring in Molecular Pathology.',
-  'I write about biology, biochemistry, general medicine, health, pharmaceuticals, science policy and mental health. My passion lies in the general medicine and mental health sectors. I am experienced in creating health and science-related content for the general public as well as writing for journal publication.',
-  'When I’m not working you can find me gardening, reading, at the gym or behind a sewing machine.',
+  'I am a medical writer based in New Zealand. I graduated from Victoria University of Wellington in 2021 with a Bachelor of Biomedical Science, majoring in molecular pathology.',
+  'My experience is in writing research manuscripts and slide kits as well as health writing for the general public. Please check out some examples of my work on the ‘Examples’ page. I also post regularly on my Medium account which is linked below.',
+  'When I’m not writing, you can find me at the gym, curled up with a good book, or behind a sewing machine.',
 ]
 
 const aboutMeLinks = [
@@ -17,11 +17,15 @@ const aboutMeLinks = [
     href: variables.linkedIn,
   },
   {
-    name: 'CV',
-    href: 'elizabeth-howe-cv.pdf',
+    name: 'Medium',
+    href: 'https://medium.com/@elizabeth.ruby.howe',
   },
   {
-    name: 'elizabeth.ruby.howe@gmail.com',
+    name: 'CV',
+    href: 'resources/Elizabeth_Howe_CV_Nov_22.pdf',
+  },
+  {
+    name: 'Contact me',
     href: 'mailto:elizabeth.ruby.howe@gmail.com',
   },
 ]
