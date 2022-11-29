@@ -12,7 +12,7 @@ export default function aboutMe() {
       <div className="relative flex flex-grow">
         <Image
           priority
-          src="/rm245-bb-62.jpg"
+          src="/cover-image.jpg"
           alt="Elizabeth Howe"
           layout="fill"
         />
