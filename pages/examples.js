@@ -33,6 +33,36 @@ const sections = [
     name: 'Health Writing - General Audience',
     examples: [
       {
+        name: 'How VR Can Help People With Dementia',
+        href: 'https://medium.com/illumination/how-vr-can-help-people-with-dementia-17dbf2d74e6b',
+        date: '2023-01-05T12:00:00.000Z',
+        note: 'Virtual reality is a promising therapeutic option for increasing the quality of life for people with dementia.'
+      },
+      {
+        name: 'AI in Healthcare: Detecting COVID-19',
+        href: 'https://medium.com/predict/ai-in-healthcare-detecting-covid-19-f892ccc96640',
+        date: '2023-01-04T12:00:00.000Z',
+        note: 'AI4COVID-19 allows testing for COVID-19 via a smartphone app. This new AI technology could change how we respond to some respiratory illnesses.'
+      },
+      {
+        name: 'How Virtual Reality Therapy Can Improve Psychosis Treatment',
+        href: 'https://medium.com/predict/how-virtual-reality-therapy-can-improve-psychosis-treatment-7c2e4e6f3c85',
+        date: '2023-01-03T12:00:00.000Z',
+        note: 'VR is a promising treatment option for many different conditions — including agoraphobia in psychosis patients.'
+      },
+      {
+        name: 'How AI is Already Being Used in Healthcare',
+        href: 'https://medium.com/illumination/how-ai-is-already-being-used-in-healthcare-f9264f137030',
+        date: '2023-01-02T12:00:00.000Z',
+        note: 'From drug discovery to stroke diagnosis — AI is rapidly altering the healthcare system.'
+      },
+      {
+        name: 'How Web3 and the Metaverse Provides Solutions to Current Healthcare Issues',
+        href: 'https://medium.com/geekculture/web3-healthcare-solutions-21ab56b0e936',
+        date: '2022-12-29T12:00:00.000Z',
+        note: 'Web3 and the metaverse are not just for hard-core gamers or cryptocurrency fanatics. This new tech may revolutionize the healthcare system from improved record keeping and privacy to augmented reality surgeries.'
+      },
+      {
         name: 'Holidaying in Bali, India, or Turkey? Avoid Drinking Alcohol Contaminated With Methanol',
         href: 'https://medium.com/beingwell/holidaying-in-bali-india-or-turkey-avoid-drinking-alcohol-contaminated-with-methanol-9796ddf8bf36',
         date: '2022-11-29T12:00:00.000Z',
